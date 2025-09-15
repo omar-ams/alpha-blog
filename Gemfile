@@ -57,13 +57,14 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   # # Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 1.4"
+
 end
 
 
 group :production do 
   gem "pg"
   gem "rails_12factor"
+  gem "sqlite3", ">= 1.4"
 end
 
 group :test do
